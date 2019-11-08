@@ -38,6 +38,9 @@ public class DynamicDataSource extends AbstractRoutingDataSource implements Appl
         super.afterPropertiesSet();
     }
 
+    /**
+     * 初始化所有数据源和并指定默认数据源
+     */
     private void initDataSource() {
         Map<Object, Object> targetDataSources = new HashMap<>();
         Object defaultTargetDataSource = null;
@@ -49,6 +52,7 @@ public class DynamicDataSource extends AbstractRoutingDataSource implements Appl
                 if (dataSource != null) {
                     targetDataSources.put(route, dataSource);
                     if (defaultTargetDataSource == null) {
+                        // routes的第一个为默认数据源
                         defaultTargetDataSource = dataSource;
                     }
                 }
@@ -59,6 +63,9 @@ public class DynamicDataSource extends AbstractRoutingDataSource implements Appl
         setDefaultTargetDataSource(defaultTargetDataSource);
     }
 
+    /**
+     * 在访问数据源时，会调用当前方法来判断访问哪个数据源
+     */
     @Override
     protected Object determineCurrentLookupKey() {
         return DataSourceHolder.get();

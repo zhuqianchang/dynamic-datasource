@@ -14,6 +14,8 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.core.annotation.Order;
 
 /**
+ * 切面，用于根据DataSource注解动态切换数据源
+ *
  * @author Zhu.Qianchang
  * @date 2019/11/7.
  */

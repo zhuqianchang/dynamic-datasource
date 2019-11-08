@@ -12,6 +12,8 @@ import org.springframework.transaction.PlatformTransactionManager;
 import javax.sql.DataSource;
 
 /**
+ * 数据源配置
+ *
  * @author Zhu.Qianchang
  * @date 2019/11/7.
  */

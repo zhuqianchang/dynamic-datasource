@@ -6,6 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
+ * EnableDynamicDataSource 开启动态数据源
+ *
  * @author Zhu.Qianchang
  * @date 2019/11/8.
  */
