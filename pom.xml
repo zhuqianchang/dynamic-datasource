@@ -16,7 +16,7 @@
         <jave.version>1.8</jave.version>
         <druid.version>1.0.16</druid.version>
         <mybatis-spring-boot-starter.version>1.3.2</mybatis-spring-boot-starter.version>
-        <swagger2.version>2.8.0</swagger2.version>
+        <swagger2.version>2.10.0</swagger2.version>
     </properties>
 
     <dependencies>
